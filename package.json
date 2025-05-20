@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
-    "vercel-build": "ng build --configuration production"
+    "vercel-build": "ng build --configuration development"
   },
   "private": true,
   "dependencies": {
