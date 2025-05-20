@@ -12,7 +12,6 @@
     "src/main.ts",
   ],
   "include": [
-    "src/**/*.d.ts",
-    "src/**/*"
+    "src/**/*.d.ts"
   ]
 }
