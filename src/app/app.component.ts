@@ -1,6 +1,5 @@
 import { loadSlim } from '@tsparticles/slim';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { initFlowbite } from 'flowbite';
 import { NgParticlesService } from "@tsparticles/angular";
 import { Container, Engine, ParticlesOptions } from '@tsparticles/engine';
 import { MoveDirection, ClickEvent, OutMode } from "@tsparticles/engine";
@@ -134,7 +133,6 @@ export class AppComponent implements OnInit, AfterViewInit  {
       //await loadFull(engine);
       await loadSlim(engine);
     });
-    initFlowbite();
     setTimeout(() => {
       this.isLoaded = true;
     }, 1);
