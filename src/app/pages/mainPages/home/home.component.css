@@ -1,0 +1,29 @@
+.logo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-wrapper {
+  display: flex;
+  position: absolute;
+  width: 200%;
+  animation: scroll-logos 15s linear infinite;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  margin: 0 20px;
+  object-fit: contain;
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

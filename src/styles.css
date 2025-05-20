@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "tailwindcss-animated";
+@import 'all-icons/dist/css/all-icons.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark, cupcake;
+  }
+@plugin "flowbite/plugin";
+
+
+*{
+  font-family: 'Lato', sans-serif;
+  user-select: text;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  
+}
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
