@@ -6,10 +6,13 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('daisyui'),
-    require('tailwindcss-animated')
+    require("daisyui"),
+    require("flowbite/plugin"),
+    require("tailwindcss-animated"),
   ],
   daisyui: {
-    themes: false
-  }
+    themes: [
+      ["dark", "cupcake"]
+    ]
+  },
 }
