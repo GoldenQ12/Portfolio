@@ -9,6 +9,7 @@
 
 
 *{
+  color-scheme: dark;
   font-family: 'Lato', sans-serif;
   user-select: text;
   scrollbar-width: none; /* For Firefox */
