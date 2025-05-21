@@ -6,6 +6,8 @@ import { MoveDirection, ClickEvent, OutMode } from "@tsparticles/engine";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { DataService } from './services/data.service';
+import { injectSpeedInsights  } from "@vercel/speed-insights"
+
 
 
 @Component({
@@ -112,6 +114,7 @@ export class AppComponent implements OnInit, AfterViewInit  {
   }
 
   async ngOnInit() {
+    injectSpeedInsights();
     this.dataService.currentLanguage$.subscribe(lang => {
       this.dataService.getTranslations(lang).subscribe(translations => {
         this.translations = translations;
