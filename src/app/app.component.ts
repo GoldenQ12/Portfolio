@@ -7,6 +7,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { DataService } from './services/data.service';
 import { injectSpeedInsights  } from "@vercel/speed-insights"
+import { inject } from "@vercel/analytics"
+
 
 
 
@@ -114,6 +116,7 @@ export class AppComponent implements OnInit, AfterViewInit  {
   }
 
   async ngOnInit() {
+    inject();
     injectSpeedInsights();
     this.dataService.currentLanguage$.subscribe(lang => {
       this.dataService.getTranslations(lang).subscribe(translations => {
