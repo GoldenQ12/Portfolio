@@ -13,11 +13,16 @@ export class NavBarComponent implements OnInit  {
 
   menus: Menu[] = [];
   selectedTab: string = '';
+  menuIsOpen: boolean = false;
+
+  id = "tsparticles";
 
   translations: {[key: string]: string} = {};
 
 
-
+  toggleMenu() {
+    this.menuIsOpen = !this.menuIsOpen;
+  }
   constructor ( 
     private dataService: DataService,
   ) {}

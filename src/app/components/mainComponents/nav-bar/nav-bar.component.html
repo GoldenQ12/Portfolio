@@ -32,12 +32,31 @@
 
   
         <div class="md:hidden">
-          <button class="btn btn-square btn-ghost">
+          <button  *ngIf="menuIsOpen"(click)="toggleMenu()" class="btn btn-square btn-ghost">
             <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6H6m12 4H6m12 4H6m12 4H6"/>
             </svg>
           </button>
         </div>
+        <div *ngIf="!menuIsOpen" class=" fixed inset-0 bg-black/50 z-[100] w-screen h-screen flex flex-col justify-center items-center md:hidden space-y-4">
+          <a (click)="toggleMenu()" [href]="'#' + menu.name" *ngFor="let menu of menus" class="hover:text-primary">
+            <button [ngClass]="{'font-bold': selectedTab == menu.url}" 
+              class="animate-flip-up animation-duration-[500ms] relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+              <span class="text-bold relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                {{translations[menu.url]}}
+              </span>
+            </button>
+          </a>
+          <a (click)="toggleMenu()"class="hover:text-primary">
+            <button 
+              class="animate-flip-up animation-duration-[500ms] relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-600 to-blue-500 group-hover:from-red-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+              <span class="text-bold relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-red-900/20 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                ❌
+              </span>
+            </button>
+          </a>
+        </div>
+        
       </div>
     </div>
   </nav>
