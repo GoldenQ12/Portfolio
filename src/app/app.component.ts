@@ -146,9 +146,9 @@ export class AppComponent implements OnInit, AfterViewInit  {
         const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollTop = window.scrollY;
         const progress = (scrollTop / scrollHeight) * 100;
-        scrollProgress.style.left = `${progress}%`;
+        scrollProgress.style.top = `${progress}%`;
         if(scrollBar){
-          scrollBar.style.width = `${progress}%`;
+          scrollBar.style.height = `${progress}%`;
         }
       }
     });
