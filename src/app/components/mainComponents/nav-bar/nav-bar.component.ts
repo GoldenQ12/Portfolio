@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit  {
 
   menus: Menu[] = [];
   selectedTab: string = '';
-  menuIsOpen: boolean = false;
+  menuIsOpen: boolean = true;
 
   id = "tsparticles";
 
