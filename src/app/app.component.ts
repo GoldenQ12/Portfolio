@@ -122,7 +122,6 @@ export class AppComponent implements OnInit, AfterViewInit  {
     });
     this.dataService.getTranslations('en').subscribe(translations => {
       this.translations = translations;
-      console.log(this.translations);
     });
     AOS.init({
         duration: 1500,
