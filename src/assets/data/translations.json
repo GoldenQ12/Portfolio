@@ -34,7 +34,9 @@
             "aboutMeLKSTitle": "LKS S.COOP, Spain",
             "aboutMeLKSDescription":  "Programación FullStack con diferentes lenguajes: C# + Ajax en MVC, Ionic + Angular con API interna, etc... ",
             "aboutMeDate": "2024-Actualmente",
-            "copyrightReserved": "© 2025 Alexander Salgado Rojo. Todos los derechos reservados."
+            "copyrightReserved": "© 2025 Alexander Salgado Rojo. Todos los derechos reservados.",
+            "footerContactDescription": "Contáctame por aquí directamente si lo prefieres",
+            "footerContactButton": "Enviar"
         }
     ],
     "en": [
@@ -72,7 +74,9 @@
             "aboutMeLKSTitle": "LKS S.COOP, Spain",
             "aboutMeLKSDescription":  "FullStack programming with different languages: C# + Ajax in MVC, Ionic + Angular with internal API, etc...",
             "aboutMeDate": "2024-Currently",
-            "copyrightReserved": "© 2025 Alexander Salgado Rojo. All rights reserved."
+            "copyrightReserved": "© 2025 Alexander Salgado Rojo. All rights reserved.",
+            "footerContactDescription": "Contact me directly through here if you rather",
+            "footerContactButton": "Submit"
         }
     ]
 }
