@@ -10,8 +10,7 @@
 
 *{
   color-scheme: dark;
-  font-family: 'Lato', sans-serif;
-  user-select: text;
+  font-family: "Lato", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   
