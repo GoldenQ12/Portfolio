@@ -6,8 +6,8 @@ import { MoveDirection, ClickEvent, OutMode } from "@tsparticles/engine";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { DataService } from './services/data.service';
-import { injectSpeedInsights  } from "@vercel/speed-insights"
-import { inject } from "@vercel/analytics"
+import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 
 

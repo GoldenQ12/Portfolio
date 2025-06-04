@@ -10,20 +10,21 @@
               </p>
             </div>
             <div class='max-w-lg mx-auto'>
-              <form action="https://formsubmit.co/alexander.sal.roj@gmail.com" method="POST" class='space-y-5'>
+              <form id="contactForm" action="https://formsubmit.co/alexander.sal.roj@gmail.com" method="POST" class='space-y-5'>
+                <input type="hidden" name="_next" value="https://portfolio-orcin-theta-98.vercel.app/">
                 <div class=''>
                   <div>
                     <label class='font-medium'>
                       Name
                     </label>
-                    <input type='text' name="name" required class='w-full mt-2 px-3 py-2 text-base-content bg-transparent outline-none border focus:border-primary shadow-sm rounded-lg'>
+                    <input type='text' name="name" id="name" required class='w-full mt-2 px-3 py-2 text-base-content bg-transparent outline-none border focus:border-primary shadow-sm rounded-lg'>
                   </div>
                 </div>
                 <div>
                   <label class='font-medium'>
                     Email
                   </label>
-                  <input type='email' name="email" required class='w-full mt-2 px-3 py-2 text-base-content bg-transparent outline-none border focus:border-primary shadow-sm rounded-lg'>
+                  <input type='email' name="email" id="email" required class='w-full mt-2 px-3 py-2 text-base-content bg-transparent outline-none border focus:border-primary shadow-sm rounded-lg'>
                 </div>
                 <div>
                   <label class='font-medium'>
@@ -31,7 +32,7 @@
                   </label>
                   <textarea required='' class='w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-primary shadow-sm rounded-lg'></textarea>
                 </div>
-                <button class='cursor-pointer underline bg-blue-500/20 text-center transition-all text-white  hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-2xl px-10 py-2.5 me-2 mb-2  dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full'>  {{translations['footerContactButton']}}
+                <button type="submit" class='cursor-pointer underline bg-blue-500/20 text-center transition-all text-white  hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-2xl px-10 py-2.5 me-2 mb-2  dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full'>  {{translations['footerContactButton']}}
                 </button>
               </form>
             </div>
