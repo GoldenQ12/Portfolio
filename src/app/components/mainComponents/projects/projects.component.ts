@@ -11,15 +11,11 @@ export class ProjectsComponent {
 
   translations: {[key: string]: string} = {};
 
-  constructor ( 
+  constructor (
     private dataService: DataService,
   ) {}
 
   ngOnInit(): void {
-    this.dataService.currentLanguage$.subscribe(lang => {
-      this.dataService.getTranslations(lang).subscribe(translations => {
-        this.translations = translations;
-      });
-    })
+
   }
 }

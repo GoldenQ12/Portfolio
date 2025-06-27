@@ -30,17 +30,12 @@ export class FooterComponent {
 
   translations: {[key: string]: string} = {};
 
-  constructor ( 
+  constructor (
     private dataService: DataService,
     private http: HttpClient
   ) {}
 
   ngOnInit(): void {
-    this.dataService.currentLanguage$.subscribe(lang => {
-      this.dataService.getTranslations(lang).subscribe(translations => {
-        this.translations = translations;
-      });
-    });
   }
 
 }

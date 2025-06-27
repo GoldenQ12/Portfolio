@@ -18,10 +18,6 @@ export class AboutmeComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.dataService.currentLanguage$.subscribe(lang => {
-      this.dataService.getTranslations(lang).subscribe(translations => {
-        this.translations = translations;
-      });
-    });
+
   }
 }

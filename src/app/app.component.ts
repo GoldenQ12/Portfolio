@@ -5,10 +5,10 @@ import { Container, Engine, ParticlesOptions } from '@tsparticles/engine';
 import { MoveDirection, ClickEvent, OutMode } from "@tsparticles/engine";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { DataService } from './services/data.service';
 import { inject } from '@vercel/analytics';
 import { injectSpeedInsights } from '@vercel/speed-insights';
 import { TranslateService } from '@ngx-translate/core';
+import { DataService } from './services/data.service';
 
 
 
@@ -125,14 +125,6 @@ export class AppComponent implements OnInit, AfterViewInit  {
   async ngOnInit() {
     inject();
     injectSpeedInsights();
-    this.dataService.currentLanguage$.subscribe(lang => {
-      this.dataService.getTranslations(lang).subscribe(translations => {
-        this.translations = translations;
-      });
-    });
-    this.dataService.getTranslations('en').subscribe(translations => {
-      this.translations = translations;
-    });
     AOS.init({
         duration: 1500,
         once: false
