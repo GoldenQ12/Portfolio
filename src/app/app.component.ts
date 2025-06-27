@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import { DataService } from './services/data.service';
 import { inject } from '@vercel/analytics';
 import { injectSpeedInsights } from '@vercel/speed-insights';
+import { TranslateService } from '@ngx-translate/core';
 
 
 
@@ -81,7 +82,13 @@ export class AppComponent implements OnInit, AfterViewInit  {
   constructor(
     private readonly ngParticlesService: NgParticlesService,
     private dataService : DataService,
-  ) {}
+    private translate: TranslateService
+  ) {
+    translate.setDefaultLang('en');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
+  }
 
 
   particlesLoaded(container: Container): void {
@@ -91,7 +98,7 @@ export class AppComponent implements OnInit, AfterViewInit  {
 
   initCustomCursor() {
     const cursor = document.getElementById('customCursor');
-    
+
     document.addEventListener('mousemove', (e) => {
       if (cursor) {
         console.log(e);
@@ -100,13 +107,13 @@ export class AppComponent implements OnInit, AfterViewInit  {
         cursor.classList.add('visible');
       }
     });
-  
+
     document.addEventListener('mouseenter', () => {
       if (cursor) {
         cursor.style.opacity = '1';
       }
     });
-  
+
     document.addEventListener('mouseleave', () => {
       if (cursor) {
         cursor.classList.remove('visible');
@@ -154,6 +161,6 @@ export class AppComponent implements OnInit, AfterViewInit  {
     });
   }
 
- 
+
   title = 'portfolio';
 }

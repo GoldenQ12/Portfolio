@@ -4,10 +4,12 @@ import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
 import { ProjectsComponent } from '../../../components/mainComponents/projects/projects.component';
 import { AboutmeComponent } from '../../../components/mainComponents/aboutme/aboutme.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [HomeComponent, ProjectsComponent, AboutmeComponent],
   imports: [
+    TranslateModule,
     CommonModule,
     RouterModule.forChild([
       { path: '', component: HomeComponent }

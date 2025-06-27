@@ -4,9 +4,9 @@
         <main class=''>
           <div class='max-w-screen-xl mx-auto px-4 text-base-content md:px-8'>
             <div class='max-w-lg mx-auto space-y-3 sm:text-center'>
-              <p class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">{{this.translations['footerContactTitle']}}</p>
+              <p class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">{{ 'footer.footerContactTitle' | translate}}</p>
               <p>
-                {{translations['footerContactDescription']}}
+                {{ 'footer.footerContactDescription' | translate}}
               </p>
             </div>
             <div class='max-w-lg mx-auto'>
@@ -32,7 +32,7 @@
                   </label>
                   <textarea required='' class='w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-primary shadow-sm rounded-lg'></textarea>
                 </div>
-                <button type="submit" class='cursor-pointer underline bg-blue-500/20 text-center transition-all text-white  hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-2xl px-10 py-2.5 me-2 mb-2  dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full'>  {{translations['footerContactButton']}}
+                <button type="submit" class='cursor-pointer underline bg-blue-500/20 text-center transition-all text-white  hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-2xl px-10 py-2.5 me-2 mb-2  dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full'>  {{'footer.footerContactButton' | translate}}
                 </button>
               </form>
             </div>
@@ -78,21 +78,21 @@
               </svg>
             </a>
           </div>
-          
-          
-          
+
+
+
         </div>
-        
+
         <!-- Contact Information -->
         <div class="flex md:text-left">
           <div class="">
-            
-            <p class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">{{this.translations['footerContactTitle']}}</p>
+
+            <p class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">{{'footer.footerContactTitle' | translate}}</p>
             <div class="flex flex-col gap-4">
-              
+
               <div class="flex items-start gap-4">
                 <p class="text-5xl">📋</p>
-                <a class="cursor-pointer underline bg-blue-500/20 text-center transition-all text-white  hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-2xl px-10 py-2.5 me-2 mb-2  dark:hover:bg-blue-700 dark:focus:ring-blue-800" href="../../../../assets/vary/CvProfessional.pdf" target="_blank">{{this.translations['cvFooterButton']}}</a>
+                <a class="cursor-pointer underline bg-blue-500/20 text-center transition-all text-white  hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-2xl px-10 py-2.5 me-2 mb-2  dark:hover:bg-blue-700 dark:focus:ring-blue-800" href="../../../../assets/vary/CvProfessional.pdf" target="_blank">{{'footer.cvFooterButton' | translate}}</a>
               </div>
               <div class="flex items-center gap-4">
                 <p class="text-5xl">✉️</p>
@@ -111,12 +111,12 @@
         </div>
       </div>
     </div>
-        
-  
+
+
         <!-- Copyright Notice -->
       </div>
       <div class="w-full mx-auto text-center mt-12 ">
-        <h1 class="text-xl font-bold">{{translations['copyrightReserved']}}</h1>
+        <h1 class="text-xl font-bold">{{'footer.copyrightReserved' | translate}}</h1>
       </div>
     </div>
 </section>

@@ -1,0 +1,52 @@
+{
+  "navBar" : {
+    "navBarHome": "Inicio",
+    "navBarAbout": "Sobre mí",
+    "navBarProjects": "Proyectos",
+    "navBarContact": "Contacto"
+  },
+  "hero": {
+    "heroTitle": "Hola, soy",
+    "heroDescription": "Soy un desarrollador de aplicaciones apasionado cuyo objetivo es la creación de aplicaciones eficientes y fáciles de usar.",
+    "buttonHero": "Ver proyectos",
+    "skillsTitle": "Habilidades técnicas"
+  },
+
+  "projects": {
+    "projectsTitle": "Proyectos",
+    "entertainmentProject": "Una aplicación para dispositivos móviles para poder administrar lo que juegas, lees o ves, además de poder darle tu propia evaluación",
+    "listProject": "Una aplicación para dispositivos móviles para poder crear listas de productos, una herramienta útil para crear listas de la compra",
+    "chatProject": "Una aplicación web desarrollada con la arquitectura MERN para chatear con personas con las  características comunes"
+  },
+  "aboutMe": {
+    "aboutMeTitle": "Sobre mí",
+    "aboutMeDescription1": "Soy Alexander — un desarrollador de 19 años de España con un fuerte dominio de inglés. Actualmente estoy abierto a trabajar y activamente buscando oportunidades. Si necesitas un sitio web o ayuda con cualquier cosa relacionada con la programación, no dudes en ponerte en contacto conmigo",
+    "aboutMeDescription2": "En mi tiempo libre me gusta mucho cuidarme de mi mismo, yendo al gimnasio y manteniendome saludable, porque creo que también influye positivamente en mi forma de pensar y programar.",
+    "aboutMeDescription3": "Soy una persona con una pasión por la programación que puede rayar la obsesión, llevo desde los 14 años programando proyectos pequeños en diferentes lenguajes, pero no ha sido hasta ahora que he decidido dar el siguiente paso e ir a lo grande.",
+    "aboutMeSkills": "Habilidades destacables",
+    "aboutMeSchoolTitle": "Educación y grado superior",
+    "aboutMeSchoolDescription": "Estudios básicos y grado superior de programación de desarrollo de aplicaciones multiplataforma",
+    "aboutMePragueTitle": "NbServis, Prague",
+    "aboutMePragueDescription": "3 meses en prácticas de Erasmus en la República Checa de mantenimiento dispositivos electrónicos: telefonos móviles, pantallas, ordenadores, portátiles, etc...",
+    "aboutMeLKSTitle": "LKS S.COOP, Spain",
+    "aboutMeLKSDescription":  "Programación FullStack con diferentes lenguajes: C# + Ajax en MVC, Ionic + Angular con API interna, etc... ",
+    "aboutMeDate": "2024-2025"
+  },
+  "skills" : {
+    "skillsTitle1": "Se me da bien trabajar bajo presión",
+    "skillsTitle2": "Me acostumbro rápido a las metodologías que me exigen",
+    "skillsTitle3": "Me relaciono bien a la hora de trabajar en equipo",
+    "otherSkills": "Otros",
+    "otherSkills1": "Español como lengua materna",
+    "otherSkills2": "Nivel alto de Inglés, certificado oficial en C1 Advanced",
+    "otherSkills3": "Nivel medio de Vasco"
+  },
+  "footer": {
+    "footerContactTitle": "Contáctame",
+    "cvFooterButton": "Ver CV",
+    "copyrightReserved": "© 2025 Alexander Salgado Rojo. Todos los derechos reservados.",
+    "footerContactDescription": "Contáctame por aquí directamente si lo prefieres",
+    "footerContactButton": "Enviar"
+  }
+
+}
