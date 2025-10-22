@@ -84,10 +84,7 @@ export class AppComponent implements OnInit, AfterViewInit  {
     private dataService : DataService,
     private translate: TranslateService
   ) {
-    translate.setDefaultLang('en');
 
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
   }
 
 
@@ -96,35 +93,40 @@ export class AppComponent implements OnInit, AfterViewInit  {
   //Change this to false to see the loadi
   isLoaded: boolean = false;
 
-  initCustomCursor() {
-    const cursor = document.getElementById('customCursor');
 
-    document.addEventListener('mousemove', (e) => {
-      if (cursor) {
-        console.log(e);
-        cursor.style.left = `${e.pageX}px`;
-        cursor.style.top = `${e.pageY}px`;
-        cursor.classList.add('visible');
-      }
-    });
+  //#region  Delete
+  // initCustomCursor() {
+  //   const cursor = document.getElementById('customCursor');
 
-    document.addEventListener('mouseenter', () => {
-      if (cursor) {
-        cursor.style.opacity = '1';
-      }
-    });
+  //   document.addEventListener('mousemove', (e) => {
+  //     if (cursor) {
+  //       console.log(e);
+  //       cursor.style.left = `${e.pageX}px`;
+  //       cursor.style.top = `${e.pageY}px`;
+  //       cursor.classList.add('visible');
+  //     }
+  //   });
 
-    document.addEventListener('mouseleave', () => {
-      if (cursor) {
-        cursor.classList.remove('visible');
-        cursor.style.opacity = '0';
-      }
-    });
-  }
+  //   document.addEventListener('mouseenter', () => {
+  //     if (cursor) {
+  //       cursor.style.opacity = '1';
+  //     }
+  //   });
+
+  //   document.addEventListener('mouseleave', () => {
+  //     if (cursor) {
+  //       cursor.classList.remove('visible');
+  //       cursor.style.opacity = '0';
+  //     }
+  //   });
+  // }
 
   async ngOnInit() {
+
     inject();
     injectSpeedInsights();
+    const lang = await this.getLanguage();
+    this.translate.use(lang);
     AOS.init({
         duration: 1500,
         once: false
@@ -134,23 +136,24 @@ export class AppComponent implements OnInit, AfterViewInit  {
     });
     setTimeout(() => {
       this.isLoaded = true;
-    }, 1);
+    }, 1000);
   }
 
   ngAfterViewInit() {
-    window.addEventListener('scroll', () => {
-      const scrollProgress = document.getElementById('scrollProgress');
-      const scrollBar = document.getElementById('scrollBar');
-      if (scrollProgress) {
-        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollTop = window.scrollY;
-        const progress = (scrollTop / scrollHeight) * 100;
-        scrollProgress.style.top = `${progress}%`;
-        if(scrollBar){
-          scrollBar.style.height = `${progress}%`;
-        }
-      }
-    });
+
+  }
+
+  async getLanguage () {
+    const lang = localStorage.getItem('lang');
+    if ( lang ) {
+      return lang
+    } else{
+      this.translate.setDefaultLang('es');
+      const browserLang = this.translate.getBrowserLang();
+      localStorage.setItem('lang', browserLang || 'es');
+      return browserLang?.match(/en|es/) ? browserLang : 'es';
+    }
+
   }
 
 

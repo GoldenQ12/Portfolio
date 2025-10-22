@@ -39,7 +39,6 @@ export class NavBarComponent implements OnInit  {
       .subscribe( (data: any) => {
         this.menus = data;
       });
-    this.changeLanguage('en');
   }
 
   changeLanguage(lang: string) {

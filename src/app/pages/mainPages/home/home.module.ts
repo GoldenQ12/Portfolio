@@ -9,7 +9,9 @@ import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [HomeComponent, ProjectsComponent, AboutmeComponent],
   imports: [
-    TranslateModule,
+    TranslateModule.forChild({
+      defaultLanguage:'es'
+    }),
     CommonModule,
     RouterModule.forChild([
       { path: '', component: HomeComponent }

@@ -47,7 +47,10 @@
     "cvFooterButton": "Ver CV",
     "copyrightReserved": "© 2025 Alexander Salgado Rojo. Todos los derechos reservados.",
     "footerContactDescription": "Contáctame por aquí directamente si lo prefieres",
-    "footerContactButton": "Enviar"
+    "footerContactButton": "Enviar",
+    "footerContactName": "Nombre",
+    "footerContactEmail": "Email",
+    "footerContactMessage": "Mensaje"
   }
 
 }

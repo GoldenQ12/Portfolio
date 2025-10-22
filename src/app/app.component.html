@@ -1,13 +1,12 @@
 
 
 <div style="user-select: text" class="mx-auto p-4 relative bg-[#000000]/50 text-white">
-  <div class="custom-cursor opacity-0 bg-gradient-to-r from-[#111111] to-[#000000]" id="customCursor"></div>
-  
+
   <ngx-particles class="fixed inset-0 z-[-1]" [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
-  <!-- ///TODO -> FIX BACKGROUND <div class="absolute inset-0 bg-cover bg-center bg-no-repeat blur-[100px] z-[-1]" 
+  <!-- ///TODO -> FIX BACKGROUND <div class="absolute inset-0 bg-cover bg-center bg-no-repeat blur-[100px] z-[-1]"
   style="background-image: url('https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?semt=ais_hybrid&w=740')">
 </div> -->
-  <div
+  <!-- <div
           class="fixed z-[-1] inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg"
           style="
             background: linear-gradient(
@@ -18,10 +17,10 @@
               rgba(79, 70, 229, 0.4) 115.91%
             );
           "
-        ></div>
+        ></div> -->
   <div class="z-[-1]  fixed inset-0 flex items-center justify-center  backdrop-blur-sm transition-opacity duration-500 bg-black/75" [ngClass]="{'hidden': isLoaded, 'flex': !isLoaded}">
     <span class="loading loading-spinner loading-lg text-primary" style="width: 5rem; height: 5rem;"></span>
-  </div> 
+  </div>
 
 
   <!-- Main Content -->
@@ -29,25 +28,26 @@
     <header class="p-4 w-full">
       <main-nav-bar />
     </header>
-  
+
     <div  id="home" class="z-50 m-auto container">
       <router-outlet/>
     </div>
-    <footer id="contact" class="container w-full mx-auto my-40">
+    <footer id="contact" class="">
       <main-footer></main-footer>
     </footer>
-    <div class="fixed top-10 right-0 h-6 w-[calc(100%-5rem)] ">
-      <img src="../assets/img/peepo.png" alt="Progress Bar" 
-           class="z-50 fixed top-0 right-0 h-6 w-6 object-cover" 
+    <!--#region Scrollbar -->
+    <!-- <div class="fixed top-10 right-0 h-6 w-[calc(100%-5rem)] ">
+      <img src="../assets/img/peepo.png" alt="Progress Bar"
+           class="z-50 fixed top-0 right-0 h-6 w-6 object-cover"
            id="scrollProgress">
       <div style="background-color:#4a722c;" id="scrollBar" class="fixed right-0 top-0 h-2 w-2 bg-black/20">
-    </div>
+    </div> -->
   </div>
 
-  
-  
 
-  
+
+
+
 
 </div>
 

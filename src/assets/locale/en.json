@@ -46,7 +46,10 @@
     "cvFooterButton": "See CV",
     "copyrightReserved": "© 2025 Alexander Salgado Rojo. All rights reserved.",
     "footerContactDescription": "Contact me directly through here if you rather",
-    "footerContactButton": "Submit"
+    "footerContactButton": "Submit",
+    "footerContactName": "Name",
+    "footerContactEmail": "Email",
+    "footerContactMessage": "Message"
   }
 
 
