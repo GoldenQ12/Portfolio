@@ -29,7 +29,10 @@
     "aboutMePragueDescription" : "3 months of Erasmus in the Republic of Chech Republic of maintenance electronic devices: mobile phones, screens, computers, laptops, etc...",
     "aboutMeLKSTitle": "LKS S.COOP, Spain",
     "aboutMeLKSDescription":  "FullStack programming with different languages: C# + Ajax in MVC, Ionic + Angular with internal API, etc...",
-    "aboutMeDate": "2024-2025"
+    "aboutMeDate": "2024-2025",
+    "aboutMeUlmaTitle": "ULMA Group, Spain",
+    "aboutMeUlmaDescription":  "Internal architecture of ULMA Handling Systems with the use of Delphi and C++, automation of traditional and robotic storages",
+    "aboutMeUlmaDate": "2025-Currently"
   },
   "skills": {
     "aboutMeSkills": "Strong Points",
